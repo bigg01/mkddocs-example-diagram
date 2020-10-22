@@ -1,0 +1,1 @@
+# mkddocs-example-diagram
