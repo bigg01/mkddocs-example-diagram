@@ -12,6 +12,7 @@ nav:
   - Full Example: example.md
   - Table: tables.md
   - tab: taps.md
+  - kubectl: kubectl.md
 #theme:
 #   name: 'material'
 #   palette:
