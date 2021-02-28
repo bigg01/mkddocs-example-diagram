@@ -1,10 +1,10 @@
-site_name: cPaaS-Docs
+site_name: Cloud-Docs
 
 plugins:
   - diagrams:
       file_extension: ".diagrams.py"
       max_workers: 5
-#- search
+  - search
 
 nav:
   - Getting Started: index.md
@@ -13,17 +13,21 @@ nav:
   - Table: tables.md
   - tab: taps.md
   - kubectl: kubectl.md
+  - Terraform Doc: terraform_doc.md
+  - example.tf.md
+  - graphivz.md
 #theme:
 #   name: 'material'
 #   palette:
 #     primary: indigo
      #scheme: default
+
 theme:
   name: 'material'
   palette:
-    - scheme: default
-      primary: indigo
-      accent: indigo
+    - scheme: teal
+      primary: teal
+      accent: teal
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
@@ -40,3 +44,11 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
   - pymdownx.tabbed
+  - pymdownx.details
+  #- mdx_inline_graphviz
+  #- markdown_inline_graphviz
+  #- markdown_inline_graphviz
+  - mdx_inline_graphviz
+
+repo_url: https://github.com/bigg01/mkdocs-example-diagram
+edit_uri: edit/main/docs/

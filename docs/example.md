@@ -20,8 +20,22 @@
 ``` go
 package main
 
+import (
+"fmt"
+)
+
+fmt.Println("hello")
+
 ```
 
+fastapi
 ``` python
-import tensorflow as tf
+from fastapi import FastAPI
+
+app = FastAPI()
+
+
+@app.get("/")
+async def root():
+    return {"message": "Hello World"}
 ```
