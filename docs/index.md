@@ -1,22 +1,24 @@
 # Getting Started
 
-Full code on [github](https://github.com/ahmednafies/sanic_camelcase_middleware).
+# Diagram as Code
 
-## Install
-    pip install sanic_camelcase_middelware
+[diagrams](https://diagrams.mingrammer.com/)
 
-## Dependencies
-* [pyhumps](https://pypi.org/project/pyhumps/)
-* [sanic](https://pypi.org/project/sanic/)
 
 ## Example
 ```python
-from sanic import Sanic
-from sanic_camelcase_middleware import Camelize
+# diagram.py
+from diagrams import Diagram
+from diagrams.aws.compute import EC2
+from diagrams.aws.database import RDS
+from diagrams.aws.network import ELB
 
-app = Sanic(__name__)
-Camelize(app)
+with Diagram("Web Service", show=False):
+    ELB("lb") >> EC2("web") >> RDS("userdb")
 ```
 
- ![Event processing architecture](event_processing.png)
+## Azure Example Diagramms
+![azure_ingress_egress](azure_ingress_egress.png)
+
+//![Event processing architecture](event_processing.png)
  ![Ingress Egress](ocp3_ingress_egress.png)

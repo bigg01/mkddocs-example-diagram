@@ -15,7 +15,7 @@ nav:
   - kubectl: kubectl.md
   - Terraform Doc: terraform_doc.md
   - example.tf.md
-  - graphivz.md
+#  - graphivz.md
 #theme:
 #   name: 'material'
 #   palette:
@@ -48,7 +48,7 @@ markdown_extensions:
   #- mdx_inline_graphviz
   #- markdown_inline_graphviz
   #- markdown_inline_graphviz
-  - mdx_inline_graphviz
+  #- mdx_inline_graphviz
 
 repo_url: https://github.com/bigg01/mkdocs-example-diagram
 edit_uri: edit/main/docs/
